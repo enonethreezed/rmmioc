@@ -11,6 +11,11 @@ concretos que la herramienta usa en la nube para conectar (relays, APIs, agentes
 etc.). Los valores que contienen patrones regex/comodín se reducen a su parte
 estática.
 
+Antes de escribir la lista, cada dominio se valida con una consulta de registro A
+(``dig A``); los dominios que no existen (NXDOMAIN) se descartan para no incluir
+endpoints muertos. Con ``--drop-nodata`` también se descartan los que existen pero
+no tienen registro A.
+
 Salida: una lista plana de dominios (uno por línea) apta para Pi-hole, AdGuard,
 uBlock, NextDNS, etc.
 """
@@ -21,6 +26,8 @@ import argparse
 import re
 import subprocess
 import sys
+from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import yaml
@@ -29,6 +36,11 @@ try:
     import tldextract
 except ImportError:  # pragma: no cover
     tldextract = None
+
+try:
+    import dns.resolver
+except ImportError:  # pragma: no cover
+    dns = None
 
 LOLRMM_REPO = "https://github.com/magicsword-io/LOLRMM.git"
 CACHE_DIR = Path(".cache/LOLRMM")
@@ -43,7 +55,53 @@ HEADER = """\
 # Source: {source}
 # Generated: {generated}
 # Total domains: {count}
+# DNS check: A record{extra}
 """
+
+
+def lookup_a(domain: str, timeout: float, retries: int = 2) -> str:
+    """Resuelve el registro A de ``domain`` y devuelve su estado.
+
+    Estados: ``A`` (tiene registro A), ``NODATA`` (el dominio existe pero sin A),
+    ``NXDOMAIN`` (el dominio no existe) y ``ERROR`` (fallo transitorio).
+    """
+    for _ in range(retries):
+        resolver = dns.resolver.Resolver()
+        resolver.timeout = timeout
+        resolver.lifetime = timeout
+        try:
+            resolver.resolve(domain, "A")
+            return "A"
+        except dns.resolver.NXDOMAIN:
+            return "NXDOMAIN"
+        except dns.resolver.NoAnswer:
+            return "NODATA"
+        except Exception:
+            continue
+    return "ERROR"
+
+
+def filter_by_dns(domains: set[str], timeout: float, workers: int, drop_nodata: bool):
+    """Descarta los dominios sin resolución A (NXDOMAIN, y opcionalmente NODATA)."""
+    if dns is None:
+        return domains, {}
+
+    dropped: dict[str, str] = {}
+    keep: set[str] = set()
+
+    def _check(domain: str) -> tuple[str, str]:
+        return domain, lookup_a(domain, timeout)
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for domain, status in pool.map(_check, sorted(domains)):
+            if status == "NXDOMAIN":
+                dropped[domain] = status
+            elif status == "NODATA" and drop_nodata:
+                dropped[domain] = status
+            else:
+                keep.add(domain)
+
+    return keep, dropped
 
 
 def is_ipv4(domain: str) -> bool:
@@ -170,14 +228,14 @@ def parse_catalog(yaml_dir: Path, include_generic: bool, include_website: bool):
     return specific, generic, total
 
 
-def write_blocklist(output: Path, domains: set[str], source: str, generated: str):
+def write_blocklist(output: Path, domains: set[str], source: str, generated: str, dns_extra: str = ""):
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     ordered = sorted(domains)
     with output.open("w", encoding="utf-8") as fh:
         fh.write(
             HEADER.format(
-                source=source, generated=generated, count=len(ordered)
+                source=source, generated=generated, count=len(ordered), extra=dns_extra
             )
         )
         fh.write("\n")
@@ -236,6 +294,28 @@ def main(argv=None) -> int:
         default=LOLRMM_REPO,
         help="URL del repositorio LOLRMM (por defecto %(default)s).",
     )
+    parser.add_argument(
+        "--no-dns",
+        action="store_true",
+        help="No comprobar la resolución A de los dominios.",
+    )
+    parser.add_argument(
+        "--drop-nodata",
+        action="store_true",
+        help="Descarta también los dominios que existen pero sin registro A (NODATA).",
+    )
+    parser.add_argument(
+        "--dns-timeout",
+        type=float,
+        default=3.0,
+        help="Timeout por consulta DNS en segundos (por defecto %(default)s).",
+    )
+    parser.add_argument(
+        "--dns-workers",
+        type=int,
+        default=32,
+        help="Número de consultas DNS en paralelo (por defecto %(default)s).",
+    )
     args = parser.parse_args(argv)
 
     if args.source:
@@ -256,14 +336,33 @@ def main(argv=None) -> int:
         include_website=args.include_website,
     )
 
+    dropped: dict[str, str] = {}
+    dns_extra = ""
+    if not args.no_dns:
+        if dns is None:
+            print("aviso: dnspython no instalado; se omite la comprobación DNS", file=sys.stderr)
+            dns_extra = " (skipped: dnspython missing)"
+        else:
+            specific, dropped = filter_by_dns(
+                specific,
+                timeout=args.dns_timeout,
+                workers=args.dns_workers,
+                drop_nodata=args.drop_nodata,
+            )
+            dns_extra = " (dropped NXDOMAIN)" if not args.drop_nodata else " (dropped NXDOMAIN+NODATA)"
+
     from datetime import datetime, timezone
 
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
-    ordered = write_blocklist(args.output, specific, args.repo_url, generated)
+    ordered = write_blocklist(args.output, specific, args.repo_url, generated, dns_extra)
 
     print(f"Entradas Network procesadas: {total}")
     print(f"Dominios de conexión (específicos): {len(ordered)}")
     print(f"Dominios genéricos descartados: {len(generic)}")
+    if dropped:
+        counts = Counter(dropped.values())
+        for status, n in sorted(counts.items()):
+            print(f"Dominios descartados por DNS ({status}): {n}")
     print(f"Escrito en: {args.output}")
     return 0
 

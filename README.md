@@ -8,6 +8,9 @@ El parser `parser.py` recorre los ficheros YAML del catálogo LOLRMM y extrae lo
 APIs, agentes, etc.) y descartando los comodines genéricos sobre el dominio raíz del proveedor
 (p. ej. `*.anydesk.com`).
 
+Antes de escribir la lista, cada dominio se valida con una consulta de registro A (`dig A`);
+los dominios que no existen (NXDOMAIN) se descartan para no incluir endpoints muertos.
+
 ## Uso
 
 ```bash
@@ -26,6 +29,10 @@ make update                  # equivalente a `python3 parser.py`
 | `--include-generic` | Incluye también los dominios raíz genéricos (`*.vendor.tld`) |
 | `--include-website` | Incluye el dominio de `Details.Website` |
 | `--no-sync` | No clonar/actualizar; usar la caché `.cache/LOLRMM` |
+| `--no-dns` | No comprobar la resolución A de los dominios |
+| `--drop-nodata` | Descarta también los dominios que existen pero sin registro A (NODATA) |
+| `--dns-timeout SEC` | Timeout por consulta DNS (por defecto 3s) |
+| `--dns-workers N` | Consultas DNS en paralelo (por defecto 32) |
 
 ## Salida
 

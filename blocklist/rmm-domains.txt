@@ -1,7 +1,8 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-09-01 14:23:51 UTC
-# Total domains: 435
+# Generated: 2026-09-01 14:34:33 UTC
+# Total domains: 406
+# DNS check: A record (dropped NXDOMAIN)
 
 1wuccjc4a3.execute-api.eu-west-1.amazonaws.com
 29qoj3q0yf.execute-api.us-west-2.amazonaws.com
@@ -20,7 +21,6 @@ agentreportingstore.blob.core.windows.net
 agents.addigy.com
 agents.level.io
 ammyy.com
-analytics.insight.rapid7.com
 anyplace-control.com
 api.fdcollab.com
 api.helpwire.app
@@ -66,16 +66,11 @@ boot.net.anydesk.com
 breeze.app
 breezermm.com
 builds.level.io
-c.mid.al
-cc.centrastage.net
 cdn.getgo.com
 cdn.teleport.dev
-cell-1.domotz.com
 centuriontech.com
 cfcdn.pdq.com
 changes.panorama9.com
-charon.netreo.net
-checkip.zmazonaws.com
 chromoting-client.talkgadget.google.com
 chromoting-host.talkgadget.google.com
 chromoting-oauth.talkgadget.google.com
@@ -85,7 +80,6 @@ client.teamviewer.com
 cloud-233f9.firebaseapp.com
 cloud-ed980.firebaseapp.com
 cloud.acronis.com
-cloud.faronics.com
 cloud.shellhub.io
 cloud.tanium.com
 cloudbackup.management
@@ -115,11 +109,7 @@ deskroll.com
 desktop.qq.com
 desktopcentral.manageengine.cn
 desktopcentral.manageengine.com
-desktopcentral.manageengine.com.eu
 devapi.monitic.com
-devrmm.lunixar.com
-dms.zoho.com
-dms.zoho.com.eu
 docs.baramundi.com
 docs.faronics.com
 docs.invgate.net
@@ -133,7 +123,6 @@ downloads.io
 downloads.lunixar.com
 downloads.vector-networks.com
 downloads.zohocdn.com
-downloads.zohodl.com.cn
 dronemaker.org
 duetdisplay.com
 ehorus.com
@@ -165,7 +154,6 @@ gd.bj2.xyz
 geo.netsupportsoftware.com
 gerwconline.blob.core.windows.net
 get.helpwire.app
-getalphacontrol.com
 getscreen.me
 ghcr.io
 github.com
@@ -214,7 +202,6 @@ kabutoservices.com
 kaseya.com
 kickidler.com
 komari-document.pages.dev
-lb-insight-001.invgate.net
 ld.aurelius.host
 le.laplink.com
 level.io
@@ -228,11 +215,9 @@ logmein-gateway.com
 logmeinrescue.com
 lr.rmm.pod1.usw.gorelo.tech
 lunixar.com
-mail.metaquest.com
 managedsupport.kaseya.net
 manageengine.com
 mdmsupport.comodo.com
-mdt.qq.com
 meshcentral.com
 metaquest.com
 microuptime.com
@@ -241,12 +226,10 @@ miradore.com
 monitic.com
 mremoteng.org
 msp360.com
-my-sharepoint-inc.com
 my.auvik.com
 my.kickidler.com
 my.splashtop.com
 my1cloudlive.com
-my2cloudlive.com
 mygreenpc.com
 myivo-server.software.informer.com
 mymeetinggoogle.com
@@ -256,7 +239,6 @@ net.anydesk.com
 netbird.io
 netreo.com
 netsupportmanager.com
-neturo.uplus.co.kr
 netviewer.com
 networkservice.cyou
 nezha.wiki
@@ -299,7 +281,6 @@ rel.tunnels.api.visualstudio.com
 relay.netbird.io
 relay.splashtop.com
 releases.invgate.com
-remmon.hu
 remobo.en.softonic.com
 remote.it
 remote.management
@@ -319,12 +300,9 @@ remotepulse.io
 remoteutilities.com
 repairshopr.com
 reporting-connect.teleportinfra.sh
-rescue-data-cetner.logmein-gateway.com
-rescue-list.logmein-gateway.com
 resources.ninjarmm.com
 rism.pages.dev
 rmansys.ru
-rmm.barracudamsp.com
 rmm.datto.com
 rmmservice.ca
 rmmservice.com.au
@@ -346,7 +324,6 @@ sentry.dev.teramind.co
 serv.superopsalpha.com
 servably.com
 server.absolute.com
-servicedesk.itarian.com
 services.glpi-network.com
 set.me
 setme.net
@@ -371,7 +348,6 @@ sr.rmm.pod1.usw.gorelo.tech
 staging.helpwire.app
 static.freshdev.io
 stun.helpwire.app
-stunserver.stunprotocol.org
 sunlogin.oray.com
 superops.ai
 support.faronics.com
@@ -386,7 +362,6 @@ systemmonitor.us.cdn.cloudflare.net
 taf.teamviewer.com
 tailscale.com
 tele-desk.com
-telesupportgroup.com
 teramind.co
 tiflux.com
 tiflux.com.br
@@ -407,12 +382,10 @@ usage.teleport.dev
 vector-networks.com
 vizor.cloud
 wangwang.taobao.com
-web-16fe.app
 web.rustdesk.com
 webpush.freshchat.com
 weezo.en.softonic.com
 weezo.net
-wormhole.dataplicity.com
 www.baramundi.com
 www.dataplicity.com
 www.deepfreeze.com
@@ -423,7 +396,6 @@ www.glpi-project.org
 www.hoptodesk.com
 www.invgate.com
 www.komari.wiki
-www.metaquest.com
 www.monitic.com
 www.pitunnel.com
 www.remotepc.com
