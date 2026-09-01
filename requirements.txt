@@ -1,0 +1,2 @@
+PyYAML>=6.0
+tldextract>=5.0
