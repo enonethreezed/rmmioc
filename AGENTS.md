@@ -29,7 +29,7 @@ bd ready                              # ver trabajo disponible
 bd show <id>                          # ver detalle de una tarea
 bd update <id> --status in_progress   # reclamar trabajo
 bd close <id>                         # completar trabajo
-bd sync                               # sincronizar con git
+bd dolt commit && bd dolt push        # sincronizar con git
 ```
 
 Arquitectura en una línea: las tareas viven en una Dolt DB local, se sincronizan vía
