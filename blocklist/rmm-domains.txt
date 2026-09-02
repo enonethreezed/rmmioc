@@ -1,13 +1,9 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-09-01 14:34:33 UTC
-# Total domains: 406
+# Generated: 2026-09-02 08:07:56 UTC
+# Total domains: 391
 # DNS check: A record (dropped NXDOMAIN)
 
-1wuccjc4a3.execute-api.eu-west-1.amazonaws.com
-29qoj3q0yf.execute-api.us-west-2.amazonaws.com
-8z5x4rqbxi.execute-api.eu-west-1.amazonaws.com
-a1-backend-packages.s3.amazonaws.com
 account.flexihub.com
 acronis.com
 activation.netreo.net
@@ -71,9 +67,6 @@ cdn.teleport.dev
 centuriontech.com
 cfcdn.pdq.com
 changes.panorama9.com
-chromoting-client.talkgadget.google.com
-chromoting-host.talkgadget.google.com
-chromoting-oauth.talkgadget.google.com
 client-api.aweray.com
 client.oray.net
 client.teamviewer.com
@@ -134,8 +127,6 @@ ericom.com
 eu.2breeze.app
 everywhere.laplink.com
 ezhelp.co.kr
-faronics-deploy-int-production-installers.s3.eu-west-1.amazonaws.com
-faronics-deploy-na-production-installers.s3.us-west-2.amazonaws.com
 faronics.com
 faronicscloud.com
 fastviewer.com
@@ -156,7 +147,6 @@ gerwconline.blob.core.windows.net
 get.helpwire.app
 getscreen.me
 ghcr.io
-github.com
 global.rel.tunnels.api.visualstudio.com
 glpi-network.com
 glpi-project.org
@@ -250,9 +240,7 @@ ninja-backup.com
 ninjaone.com
 ninjarmm.net
 nomachine.com
-nv0mddxkh7.execute-api.us-west-2.amazonaws.com
 nvaccess.org
-objects.githubusercontent.com
 ocsinventory-ng.org
 one.comodo.com
 online.level.io
@@ -275,7 +263,6 @@ qq-messenger.en.softonic.com
 qq.com
 r1.rmm.uw.gorelo.tech
 radmin.com
-raw.githubusercontent.com
 rdp.duetdisplay.com
 rel.tunnels.api.visualstudio.com
 relay.netbird.io
@@ -287,7 +274,6 @@ remote.management
 remoteaccess.itarian.com
 remotecall.com
 remotedesktop-pa.googleapis.com
-remotedesktop.google.com
 remotepass.com
 remotepc.com
 remotepro-ap-southeast-1.faronicsdeploy.com
@@ -351,7 +337,6 @@ stun.helpwire.app
 sunlogin.oray.com
 superops.ai
 support.faronics.com
-support.services.microsoft.com
 syncromsp.com
 syspectr.com
 system-monitor.com

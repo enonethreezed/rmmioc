@@ -1,0 +1,15 @@
+# RMM connection IPs (non-domain endpoints)
+# Source: https://github.com/magicsword-io/LOLRMM.git
+# Generated: 2026-09-02 08:07:56 UTC
+# Total IPs: 9
+# Not DNS-blockable: use at the firewall/proxy (destination IP ACL) layer.
+
+51.255.19.178
+51.255.19.179
+136.243.18.122
+136.243.104.235
+136.243.104.242
+160.191.182.41
+192.3.95.152
+192.144.34.42
+198.46.178.135

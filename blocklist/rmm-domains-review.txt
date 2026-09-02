@@ -1,0 +1,41 @@
+# RMM domains requiring manual review before blocking
+# Source: https://github.com/magicsword-io/LOLRMM.git
+# Generated: 2026-09-02 08:07:56 UTC
+# Total domains: 15
+#
+# These hostnames sit on shared multi-tenant platforms (GitHub, AWS, Google,
+# Microsoft, etc.). The exact FQDN is tied to one RMM tool, but its parent
+# domain hosts unrelated legitimate traffic — blocking the FQDN wholesale
+# (or generalizing it to the parent domain) risks large collateral damage.
+# Confirm scope before adding these to a DNS or web-traffic blocklist.
+
+# tools: Faronics Deploy
+1wuccjc4a3.execute-api.eu-west-1.amazonaws.com
+# tools: Faronics Deploy
+29qoj3q0yf.execute-api.us-west-2.amazonaws.com
+# tools: Faronics Deploy
+8z5x4rqbxi.execute-api.eu-west-1.amazonaws.com
+# tools: Action1
+a1-backend-packages.s3.amazonaws.com
+# tools: Chrome Remote Desktop
+chromoting-client.talkgadget.google.com
+# tools: Chrome Remote Desktop
+chromoting-host.talkgadget.google.com
+# tools: Chrome Remote Desktop
+chromoting-oauth.talkgadget.google.com
+# tools: Faronics Deploy
+faronics-deploy-int-production-installers.s3.eu-west-1.amazonaws.com
+# tools: Faronics Deploy
+faronics-deploy-na-production-installers.s3.us-west-2.amazonaws.com
+# tools: GLPI Agent, Komari, Nezha
+github.com
+# tools: Faronics Deploy
+nv0mddxkh7.execute-api.us-west-2.amazonaws.com
+# tools: GLPI Agent
+objects.githubusercontent.com
+# tools: Komari, Nezha
+raw.githubusercontent.com
+# tools: Chrome Remote Desktop
+remotedesktop.google.com
+# tools: Microsoft Quick Assist, Quick Assist
+support.services.microsoft.com
