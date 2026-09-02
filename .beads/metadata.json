@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "rmmioc",
+  "project_id": "86ed4339-0e4b-4f82-a715-406bac1283b2"
+}
