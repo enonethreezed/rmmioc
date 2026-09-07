@@ -1,6 +1,6 @@
 # RMM domains requiring manual review before blocking
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-09-02 08:07:56 UTC
+# Generated: 2026-09-07 11:06:53 UTC
 # Total domains: 15
 #
 # These hostnames sit on shared multi-tenant platforms (GitHub, AWS, Google,

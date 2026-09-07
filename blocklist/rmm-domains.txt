@@ -1,6 +1,6 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-09-02 08:07:56 UTC
+# Generated: 2026-09-07 11:06:53 UTC
 # Total domains: 391
 # DNS check: A record (dropped NXDOMAIN)
 
@@ -208,6 +208,7 @@ lunixar.com
 managedsupport.kaseya.net
 manageengine.com
 mdmsupport.comodo.com
+mdt.qq.com
 meshcentral.com
 metaquest.com
 microuptime.com
@@ -219,7 +220,6 @@ msp360.com
 my.auvik.com
 my.kickidler.com
 my.splashtop.com
-my1cloudlive.com
 mygreenpc.com
 myivo-server.software.informer.com
 mymeetinggoogle.com
@@ -244,6 +244,7 @@ nvaccess.org
 ocsinventory-ng.org
 one.comodo.com
 online.level.io
+opsbridge.digital
 packagesstore.blob.core.windows.net
 panorama9.com
 parsec.app
@@ -312,7 +313,6 @@ servably.com
 server.absolute.com
 services.glpi-network.com
 set.me
-setme.net
 shellhub.io
 showmypc.com
 signal.hoptodesk.com
