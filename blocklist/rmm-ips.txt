@@ -1,6 +1,6 @@
 # RMM connection IPs (non-domain endpoints)
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-09-07 11:06:53 UTC
+# Generated: 2026-09-14 11:18:29 UTC
 # Total IPs: 9
 # Not DNS-blockable: use at the firewall/proxy (destination IP ACL) layer.
 

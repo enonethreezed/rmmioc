@@ -1,7 +1,7 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-09-07 11:06:53 UTC
-# Total domains: 391
+# Generated: 2026-09-14 11:18:29 UTC
+# Total domains: 392
 # DNS check: A record (dropped NXDOMAIN)
 
 account.flexihub.com
@@ -29,6 +29,7 @@ api.netbird.io
 api.netreo.com
 api.remote.it
 api.remsupp.com
+api.rmmmax.com
 api.rustdesk.com
 api.splashtop.com
 api.splashtop.eu
