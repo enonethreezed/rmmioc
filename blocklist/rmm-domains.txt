@@ -1,7 +1,7 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-09-14 11:18:29 UTC
-# Total domains: 392
+# Generated: 2026-09-21 11:31:36 UTC
+# Total domains: 390
 # DNS check: A record (dropped NXDOMAIN)
 
 account.flexihub.com
@@ -284,7 +284,6 @@ remotepro-eu-west-1.faronicsdeploy.com
 remotepro-sa-east-1.faronicsdeploy.com
 remotepro-us-east-1.faronics.com
 remotepro-us-west-2.faronics.com
-remotepulse.io
 remoteutilities.com
 repairshopr.com
 reporting-connect.teleportinfra.sh
@@ -385,7 +384,6 @@ www.komari.wiki
 www.monitic.com
 www.pitunnel.com
 www.remotepc.com
-www.remotepulse.io
 www.rodex.cc
 www.shellhub.io
 www.teramind.co
