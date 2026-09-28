@@ -1,7 +1,7 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-09-21 11:31:36 UTC
-# Total domains: 390
+# Generated: 2026-09-28 12:25:57 UTC
+# Total domains: 409
 # DNS check: A record (dropped NXDOMAIN)
 
 account.flexihub.com
@@ -18,6 +18,8 @@ agents.addigy.com
 agents.level.io
 ammyy.com
 anyplace-control.com
+api-ca-1.lavawall.com
+api.allocentra.co.za
 api.fdcollab.com
 api.helpwire.app
 api.hoptodesk.com
@@ -25,15 +27,18 @@ api.idrive.com
 api.jumpcloud.com
 api.localxpose.io
 api.monitic.com
+api.mremote.io
 api.netbird.io
 api.netreo.com
 api.remote.it
 api.remsupp.com
+api.rg-supervision.com
 api.rmmmax.com
 api.rustdesk.com
 api.splashtop.com
 api.splashtop.eu
 apicdn-wchat.freshchat.com
+app-af-agent-prod-009.azurewebsites.net
 app.atera.com
 app.deskday.ai
 app.gorelo.io
@@ -43,6 +48,7 @@ app.monitic.com
 app.netbird.io
 app.pdq.com
 app.tiflux.com
+app.zecurit.com
 appcdn.atera.com
 assist.jumpcloud.com
 assist.zoho.com
@@ -57,12 +63,14 @@ barracudamsp.com
 basecamp.com
 beamyourscreen.com
 beanywhere.com
+blackcryptknight.com
 bluetrait.io
 bomgarcloud.com
 boot.net.anydesk.com
 breeze.app
 breezermm.com
 builds.level.io
+caremote1.lavawall.com
 cdn.getgo.com
 cdn.teleport.dev
 centuriontech.com
@@ -92,7 +100,9 @@ connectwise.com
 content.rview.com
 control.connectwise.com
 crossloop.en.softonic.com
+d1m8kha1zyjal6.cloudfront.net
 dameware.com
+dashboard.rg-supervision.com
 dataplicity.com
 deepfreeze.com
 demo.controlr.app
@@ -104,6 +114,7 @@ desktop.qq.com
 desktopcentral.manageengine.cn
 desktopcentral.manageengine.com
 devapi.monitic.com
+dms.zecurit.com
 docs.baramundi.com
 docs.faronics.com
 docs.invgate.net
@@ -113,7 +124,7 @@ donkz.nl
 download.hoptodesk.com
 download.pilixo.com
 download.remsupp.com
-downloads.io
+downloads.level.io
 downloads.lunixar.com
 downloads.vector-networks.com
 downloads.zohocdn.com
@@ -193,9 +204,11 @@ kabutoservices.com
 kaseya.com
 kickidler.com
 komari-document.pages.dev
+lavawinupdate.lavawall.com
 ld.aurelius.host
 le.laplink.com
 level.io
+lisa.rg-supervision.com
 litemanager.com
 live.screenconnect.com
 localxpose.io
@@ -284,6 +297,7 @@ remotepro-eu-west-1.faronicsdeploy.com
 remotepro-sa-east-1.faronicsdeploy.com
 remotepro-us-east-1.faronics.com
 remotepro-us-west-2.faronics.com
+remotepulse.io
 remoteutilities.com
 repairshopr.com
 reporting-connect.teleportinfra.sh
@@ -326,6 +340,7 @@ site24x7.in
 site24x7.net.au
 skyfex.com
 socket.lunixar.com
+softbymade.top
 sorillus.com
 soti.net
 splashtop.com
@@ -347,6 +362,7 @@ systemmonitor.us.cdn.cloudflare.net
 taf.teamviewer.com
 tailscale.com
 tele-desk.com
+telesupportgroup.com
 teramind.co
 tiflux.com
 tiflux.com.br
@@ -369,6 +385,7 @@ vizor.cloud
 wangwang.taobao.com
 web.rustdesk.com
 webpush.freshchat.com
+webserv.logistical-software.co.uk
 weezo.en.softonic.com
 weezo.net
 www.baramundi.com
@@ -381,9 +398,11 @@ www.glpi-project.org
 www.hoptodesk.com
 www.invgate.com
 www.komari.wiki
+www.logistical-software.co.uk
 www.monitic.com
 www.pitunnel.com
 www.remotepc.com
+www.remotepulse.io
 www.rodex.cc
 www.shellhub.io
 www.teramind.co
