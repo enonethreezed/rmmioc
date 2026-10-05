@@ -1,7 +1,7 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-09-28 12:25:57 UTC
-# Total domains: 409
+# Generated: 2026-10-05 13:06:27 UTC
+# Total domains: 410
 # DNS check: A record (dropped NXDOMAIN)
 
 account.flexihub.com
@@ -166,7 +166,6 @@ go.getscreen.me
 googl-165a0.web.app
 googl-6c11f.firebaseapp.com
 googl-6c11f.web.app
-gorelo-rmm.azurewebsites.net
 goto.com
 gotohttp.com
 goverlan.com
@@ -260,6 +259,7 @@ one.comodo.com
 online.level.io
 opsbridge.digital
 packagesstore.blob.core.windows.net
+pandoramods.top
 panorama9.com
 parsec.app
 parsec.gg
@@ -317,6 +317,7 @@ rt.teramind.co
 rudesktop.ru
 runsmart.io
 rustdesk.com
+savaliyapriyal874-code.github.io
 search.namequery.com
 secure.instanthousecall.com
 seetrol.co.kr
