@@ -1,7 +1,7 @@
 # RMM domains requiring manual review before blocking
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-10-05 13:06:27 UTC
-# Total domains: 15
+# Generated: 2026-10-12 13:58:04 UTC
+# Total domains: 36
 #
 # These hostnames sit on shared multi-tenant platforms (GitHub, AWS, Google,
 # Microsoft, etc.). The exact FQDN is tied to one RMM tool, but its parent
@@ -17,6 +17,16 @@
 8z5x4rqbxi.execute-api.eu-west-1.amazonaws.com
 # tools: Action1
 a1-backend-packages.s3.amazonaws.com
+# tools: N-able N-central
+a33d8yamkwy4nx-ats.iot.ap-southeast-2.amazonaws.com
+# tools: N-able N-central
+a33d8yamkwy4nx-ats.iot.eu-central-1.amazonaws.com
+# tools: N-able N-central
+a33d8yamkwy4nx-ats.iot.eu-west-1.amazonaws.com
+# tools: N-able N-central
+a33d8yamkwy4nx-ats.iot.us-west-2.amazonaws.com
+# tools: CloudFlare Tunnel
+api.cloudflare.com
 # tools: Chrome Remote Desktop
 chromoting-client.talkgadget.google.com
 # tools: Chrome Remote Desktop
@@ -39,3 +49,35 @@ raw.githubusercontent.com
 remotedesktop.google.com
 # tools: Microsoft Quick Assist, Quick Assist
 support.services.microsoft.com
+# tools: Vicarius vRx
+vicarius-ap-southeast-3-installer.s3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-ap-southeast-3-installer.s3.ap-southeast-3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-ap-southeast-3-patches.s3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-ap-southeast-3-patches.s3.ap-southeast-3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-ap-southeast-3-release.s3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-ap-southeast-3-release.s3.ap-southeast-3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-eu-central-1-installer.s3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-eu-central-1-installer.s3.eu-central-1.amazonaws.com
+# tools: Vicarius vRx
+vicarius-eu-central-1-patches.s3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-eu-central-1-patches.s3.eu-central-1.amazonaws.com
+# tools: Vicarius vRx
+vicarius-eu-central-1-release.s3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-eu-central-1-release.s3.eu-central-1.amazonaws.com
+# tools: Vicarius vRx
+vicarius-installer.s3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-patches.s3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-release.s3.amazonaws.com
+# tools: Vicarius vRx
+vicarius-release.s3.us-east-1.amazonaws.com

@@ -1,7 +1,7 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-10-05 13:06:27 UTC
-# Total domains: 410
+# Generated: 2026-10-12 13:58:04 UTC
+# Total domains: 434
 # DNS check: A record (dropped NXDOMAIN)
 
 account.flexihub.com
@@ -50,6 +50,7 @@ app.pdq.com
 app.tiflux.com
 app.zecurit.com
 appcdn.atera.com
+argotunnel.com
 assist.jumpcloud.com
 assist.zoho.com
 atera-agent-heartbeat.servicebus.windows.net
@@ -75,6 +76,7 @@ cdn.getgo.com
 cdn.teleport.dev
 centuriontech.com
 cfcdn.pdq.com
+cftunnel.com
 changes.panorama9.com
 client-api.aweray.com
 client.oray.net
@@ -86,6 +88,10 @@ cloud.shellhub.io
 cloud.tanium.com
 cloudbackup.management
 cmdm.comodo.com
+comserver.eu1.mspa.n-able.com
+comserver.global.mspa.n-able.com
+comserver.us1.mspa.n-able.com
+comserver.us2.mspa.n-able.com
 connect.acronis.com
 connect.ap.ngrok-agent.com
 connect.au.ngrok-agent.com
@@ -130,6 +136,10 @@ downloads.vector-networks.com
 downloads.zohocdn.com
 dronemaker.org
 duetdisplay.com
+eb.ap-southeast-2.prd.davinci.system-monitor.com
+eb.eu-central-1.prd.davinci.system-monitor.com
+eb.eu-west-1.prd.davinci.system-monitor.com
+eb.us-west-2.prd.davinci.system-monitor.com
 ehorus.com
 electric.ai
 emcosoftware.com
@@ -142,6 +152,7 @@ ezhelp.co.kr
 faronics.com
 faronicscloud.com
 fastviewer.com
+feeds.n-able.com
 fixme.it
 fleetdeck.io
 fortra.com
@@ -173,6 +184,7 @@ grtmprod.addigy.com
 guacamole.apache.org
 gw.remotix.com
 gw.usw.gorelo.tech
+h2.cftunnel.com
 heartbeatrm.com
 help.invgate.com
 helpbeam.software.informer.com
@@ -259,7 +271,6 @@ one.comodo.com
 online.level.io
 opsbridge.digital
 packagesstore.blob.core.windows.net
-pandoramods.top
 panorama9.com
 parsec.app
 parsec.gg
@@ -269,6 +280,7 @@ pilixo.com
 pitunnel.com
 pkgs.netbird.io
 portal.ehorus.com
+prd.cdo.system-monitor.com
 prod.addigy.com
 ps.atera.com
 public.rmm.pod1.usw.gorelo.tech
@@ -276,13 +288,17 @@ pubsub.atera.com
 pulseway.com
 qq-messenger.en.softonic.com
 qq.com
+quic.cftunnel.com
 r1.rmm.uw.gorelo.tech
 radmin.com
 rdp.duetdisplay.com
+region1.v2.argotunnel.com
+region2.v2.argotunnel.com
 rel.tunnels.api.visualstudio.com
 relay.netbird.io
 relay.splashtop.com
 releases.invgate.com
+releases.n-able.com
 remobo.en.softonic.com
 remote.it
 remote.management
@@ -318,6 +334,7 @@ rudesktop.ru
 runsmart.io
 rustdesk.com
 savaliyapriyal874-code.github.io
+screenconnect.com
 search.namequery.com
 secure.instanthousecall.com
 seetrol.co.kr
@@ -334,6 +351,7 @@ signal.hoptodesk.com
 signal.netbird.io
 signalserver.xyz
 simple-help.com
+sis.n-able.com
 site24x7.cn
 site24x7.com
 site24x7.eu
@@ -353,6 +371,7 @@ stun.helpwire.app
 sunlogin.oray.com
 superops.ai
 support.faronics.com
+swi-rc.cdn-sw.net
 syncromsp.com
 syspectr.com
 system-monitor.com
@@ -379,9 +398,14 @@ turn.monitic.com
 ultraviewer.net
 ultravnc.com
 upd.faronicslabs.com
+update.argotunnel.com
+update.n-able.com
+us-region1.v2.argotunnel.com
+us-region2.v2.argotunnel.com
 us.2breeze.app
 usage.teleport.dev
 vector-networks.com
+vicarius-static-organizationinstallations.vicarius-cdn.com
 vizor.cloud
 wangwang.taobao.com
 web.rustdesk.com
