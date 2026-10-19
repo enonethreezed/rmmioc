@@ -1,6 +1,6 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-10-12 13:58:04 UTC
+# Generated: 2026-10-19 11:38:38 UTC
 # Total domains: 434
 # DNS check: A record (dropped NXDOMAIN)
 
