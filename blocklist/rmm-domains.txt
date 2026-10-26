@@ -1,6 +1,6 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-10-19 11:38:38 UTC
+# Generated: 2026-10-26 11:55:52 UTC
 # Total domains: 434
 # DNS check: A record (dropped NXDOMAIN)
 
@@ -38,7 +38,6 @@ api.rustdesk.com
 api.splashtop.com
 api.splashtop.eu
 apicdn-wchat.freshchat.com
-app-af-agent-prod-009.azurewebsites.net
 app.atera.com
 app.deskday.ai
 app.gorelo.io
@@ -84,6 +83,7 @@ client.teamviewer.com
 cloud-233f9.firebaseapp.com
 cloud-ed980.firebaseapp.com
 cloud.acronis.com
+cloud.nsecsoft.com
 cloud.shellhub.io
 cloud.tanium.com
 cloudbackup.management
