@@ -1,7 +1,7 @@
 # RMM connection domains blocklist
 # Source: https://github.com/magicsword-io/LOLRMM.git
-# Generated: 2026-10-26 11:55:52 UTC
-# Total domains: 434
+# Generated: 2026-11-02 14:17:54 UTC
+# Total domains: 435
 # DNS check: A record (dropped NXDOMAIN)
 
 account.flexihub.com
@@ -292,6 +292,7 @@ quic.cftunnel.com
 r1.rmm.uw.gorelo.tech
 radmin.com
 rdp.duetdisplay.com
+rdviewer.oss-cn-hangzhou.aliyuncs.com
 region1.v2.argotunnel.com
 region2.v2.argotunnel.com
 rel.tunnels.api.visualstudio.com
